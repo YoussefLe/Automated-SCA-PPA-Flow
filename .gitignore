@@ -16,3 +16,4 @@ incremental_db/
 logs/
 *.log
 *.jou
+venv/
