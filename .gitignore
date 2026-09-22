@@ -1,40 +1,18 @@
-# ========================================
-# Hardware & EDA Tools (Cadence/ASIC/FPGA)
-# ========================================
-
-# Cadence Simulation (Xcelium / Incisive)
-xcelium.d/
-INCA_libs/
-.simvision/
-*.key
-*.shm/
-*.trn
-*.dsn
-xrun.history
-
-# Cadence Synthesis & Power (Genus / Joules)
-*.log
-*.cmd
-*.db
-fv/
-joules_work/
-*.rpt
-*.v_out
-
-# Waveforms & Power Traces (CRITICAL - DO NOT COMMIT)
-# These files can easily exceed GitHub's 100MB file limit
+# Fichiers de simulation et de traces
 *.vcd
 *.fsdb
-*.saif
-*.tcf
 *.csv
-*.npy
+tvla_labels.txt
 
-# Compiled VHDL/Verilog work libraries
+# Dossiers de compilation
 work/
-*.vhd.bak
-*.sv.bak
+sim/
+INCA_libs/
+xcelium.d/
+db/
+incremental_db/
 
-# OS Generated Files
-.DS_Store
-Thumbs.db
+# Logs et rapports bruts
+logs/
+*.log
+*.jou
